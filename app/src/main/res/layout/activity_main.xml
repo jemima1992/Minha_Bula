@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/ic_alarm_black_24dp"
+        android:backgroundTint="#131313"
+        android:onClick="abrirTelaHorarios"
+        app:layout_constraintEnd_toStartOf="@+id/btnHorarios"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick,RtlCompat,UnknownId" />
+
+    <TextView
+        android:id="@+id/textViewHorarios"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="HORARIO"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textVicewHorarios"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHorarios"
+        tools:ignore="RtlCompat,UnknownId" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="80dp"
+        android:background="?android:attr/actionModeWebSearchDrawable"
+        android:backgroundTint="#040303"
+        android:onClick="abrirTelaBusca"
+        app:layout_constraintEnd_toStartOf="@+id/btnBusca"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NewApi,OnClick,RtlCompat,UnknownId" />
+
+    <TextView
+        android:id="@+id/textViewBusca"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="BUSCA"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBusca"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHorarios"
+        tools:ignore="HardcodedText,NotSibling,RtlCompat,UnknownId" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="250dp"
+        android:background="?android:attr/actionModeFindDrawable"
+        android:backgroundTint="#040303"
+        android:onClick="abrirTelaGlossario"
+        app:layout_constraintEnd_toStartOf="@+id/btnGlossario"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NewApi,OnClick,RtlCompat,UnknownId" />
+
+    <TextView
+        android:id="@+id/textViewGlossario"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="350dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="GLOSSÁRIO MEDICO"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewGlossario"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGlossario"
+        tools:ignore="HardcodedText,NotSibling,RtlCompat,UnknownId" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="101dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="250dp"
+        android:background="?attr/actionModePasteDrawable"
+        android:backgroundTint="#040303"
+        android:onClick="abrirTelaRelatorio"
+        app:layout_constraintEnd_toStartOf="@+id/btnRelatorio"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NewApi,OnClick,RtlCompat,UnknownId" />
+
+    <TextView
+        android:id="@+id/textViewRelatorio"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="350dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="RELATORIO"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewRelatorio"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRelatorio"
+        tools:ignore="HardcodedText,NotSibling,RtlCompat,UnknownId" />
+
+</RelativeLayout>
